@@ -11,4 +11,22 @@
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
 	
+	  <servlet>
+    <servlet-name>ProductServlet</servlet-name>
+    <servlet-class>com.emp.controller.ProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductServlet</servlet-name>
+    <url-pattern>/shop/Product.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+		<servlet-name>Hello</servlet-name>
+		<servlet-class>servlet_examples.Hello</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Hello</servlet-name>
+		<url-pattern>/Hello</url-pattern>
+	</servlet-mapping>
+	
 </web-app>
