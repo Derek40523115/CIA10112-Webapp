@@ -23,6 +23,21 @@ public class ProductService {
 		return productVO;
 	}
 	
+	public ProductVO updateproduct(Integer productId, Integer productCategoryId, String productDescribtion, Integer productPrice, String productName, Boolean productStatus) {
+		
+		ProductVO productVO = new ProductVO();
+		
+		productVO.setProduct_id(productId);
+		productVO.setProduct_category_id(productCategoryId);
+		productVO.setProduct_describtion(productDescribtion);
+		productVO.setProduct_price(productPrice);
+		productVO.setProduct_name(productName);
+		productVO.setProduct_status(productStatus);
+		dao.update(productVO);
+		
+		return productVO;
+	}
+	
 //	public ProductVO updateProduct()
 	
 	public ProductVO getOneProduct(Integer productId) {
